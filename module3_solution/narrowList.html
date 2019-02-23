@@ -1,0 +1,12 @@
+<!-- narrowList.html-->
+<br>
+<br>
+<br>
+<br>
+<ul>
+  <li ng-repeat="item in ctrl.items">
+    {{ item.name }}   ,   {{ item.short_name }}  ,  {{ item.description}}
+
+    <button ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
